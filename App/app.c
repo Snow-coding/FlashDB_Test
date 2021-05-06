@@ -156,13 +156,13 @@ static void fal_test(void)
 static void fdb_test(void)
 {
     fdb_init();
+
+    flash_cache_file_store();
 }
 
 int main(void)
 {
     //fal_test();
     fdb_test();
-
-    flash_cache_file_store();
     return 0;
 }
